@@ -1,3 +1,4 @@
+CLASS DIAGRAM (not final)
 ``` mermaid
 classDiagram
 
@@ -57,4 +58,42 @@ JSONLoader --> Course : creates
 EnrollmentEngine --> Student
 EnrollmentEngine --> Course
 EnrollmentEngine --> EligibilityResult
+```
+
+SEQUENCE DIAGRAM (not final)
+``` mermaid
+sequenceDiagram
+
+participant User
+participant Main
+participant JSONLoader
+participant Curriculum
+participant Student
+participant Engine
+participant Result
+
+User ->> Main: Enter student info
+
+Main ->> JSONLoader: loadStudents file
+JSONLoader -->> Main: return student data
+
+Main ->> JSONLoader: loadCourses file
+JSONLoader -->> Main: return course list
+
+Main ->> Student: create student object
+
+Main ->> Curriculum: filter courses
+Curriculum -->> Main: return filtered courses
+
+Main ->> Engine: evaluate eligibility
+
+Engine ->> Student: get completed courses
+Engine ->> Curriculum: check prerequisites
+Engine ->> Curriculum: check corequisites
+
+Engine ->> Result: store eligible and blocked
+Result -->> Main: return results
+
+Main ->> User: display eligible courses
+Main ->> User: display blocked courses
 ```
