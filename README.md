@@ -1,76 +1,60 @@
 ``` mermaid
 classDiagram
 
-class Program {
-<<enumeration>>
-CpE
-ECE
-EE
-}
-
-class YearLevel {
-<<enumeration>>
-Year1
-Year2
-Year3
-Year4
+class Student {
+  -string name
+  -string program
+  -int yearLevel
+  -int semester
+  -map<string, double> completedCourses
+  +getName()
+  +getProgram()
+  +getYearLevel()
+  +getSemester()
+  +getGrade(courseCode)
 }
 
 class Course {
--code: string
--name: string
--units: int
--yearLevel: YearLevel
--prerequisites: vector<string>
-+Course()
-+Course(c: string, n: string, u: int, y: YearLevel)
-+addPrerequisite(prereq: string)
-+getCode() string
-+getName() string
-+getUnits() int
-+getYearLevel() YearLevel
-+getPrerequisites() vector<string>
-}
-
-class Student {
--name: string
--program: Program
--yearLevel: YearLevel
--grades: map<string, double>
-+Student()
-+Student(n: string, p: Program, y: YearLevel)
-+addGrade(courseCode: string, grade: double)
-+hasPassed(courseCode: string) bool
-+getGrade(courseCode: string) double
-+getName() string
-+getProgram() Program
-+getYearLevel() YearLevel
+  -string courseCode
+  -string courseName
+  -int units
+  -int yearLevel
+  -int semester
+  -vector<string> preRequisites
+  -vector<string> coRequisites
+  +getCourseCode()
+  +getCourseName()
 }
 
 class Curriculum {
--courses: map<string, Course>
-+addCourse(course: Course)
-+getCourse(code: string) Course
-+getAllCourses() map<string, Course>
+  -vector<Course> courses
+  +loadFromJSON(filePath)
+  +getCoursesByProgram(program)
 }
 
-class EnrollmentService {
-+checkPrerequisites(student: Student, course: Course) bool
-+getEligibleCourses(student: Student, curriculum: Curriculum) vector<string>
+class JSONLoader {
+  +loadStudents(filePath)
+  +loadCourses(filePath)
 }
 
-class InputHandler {
-+inputGrade() double
+class EnrollmentEngine {
+  +evaluateEligibility(Student, vector<Course>)
+  +checkPrerequisites(Student, Course)
+  +checkCorequisites(Student, Course)
 }
 
-Student --> Program : belongs to
-Student --> YearLevel : current level
-Course --> YearLevel : offered in
-Curriculum "1" *-- "many" Course : contains
-EnrollmentService ..> Student : evaluates
-EnrollmentService ..> Course : checks prerequisites
-EnrollmentService ..> Curriculum : retrieves courses
-Student --> Course : has grades
-InputHandler ..> Student : inputs grades
+class EligibilityResult {
+  -vector<Course> eligibleCourses
+  -vector<Course> blockedCourses
+  +addEligible(course)
+  +addBlocked(course)
+}
 
+Student --> Course : completed
+Curriculum --> Course : contains
+JSONLoader --> Student : creates
+JSONLoader --> Course : creates
+EnrollmentEngine --> Student
+EnrollmentEngine --> Course
+EnrollmentEngine --> EligibilityResult
 ```
