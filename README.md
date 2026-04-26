@@ -8,10 +8,10 @@ class Student {
   -int yearLevel
   -int semester
   -map<string, double> completedCourses
+  -string studentStatus
   +getName()
   +getProgram()
-  +getYearLevel()
-  +getSemester()
+  +getStatus()
   +getGrade(courseCode)
 }
 
@@ -23,77 +23,106 @@ class Course {
   -int semester
   -vector<string> preRequisites
   -vector<string> coRequisites
-  +getCourseCode()
-  +getCourseName()
+}
+
+class StudentRepository {
+  +findStudentByName(name)
+  +loadFromJSON(file)
 }
 
 class Curriculum {
-  -vector<Course> courses
-  +loadFromJSON(filePath)
-  +getCoursesByProgram(program)
+  +getCourses(program, year, semester)
+  +loadFromJSON(file)
 }
 
 class JSONLoader {
-  +loadStudents(filePath)
-  +loadCourses(filePath)
+  +readFile(file)
 }
 
 class EnrollmentEngine {
   +evaluateEligibility(Student, vector<Course>)
   +checkPrerequisites(Student, Course)
   +checkCorequisites(Student, Course)
+  +determineStudentStatus(Student)
 }
 
-class EligibilityResult {
-  -vector<Course> eligibleCourses
-  -vector<Course> blockedCourses
-  +addEligible(course)
-  +addBlocked(course)
+class ResultViewer {
+  +displayStudentInfo(Student)
+  +displayCourses()
+  +displayEligibility()
 }
 
-Student --> Course : completed
-Curriculum --> Course : contains
-JSONLoader --> Student : creates
-JSONLoader --> Course : creates
+StudentRepository --> Student
+JSONLoader --> StudentRepository
+JSONLoader --> Curriculum
+
+Curriculum --> Course
+Student --> Course
+
 EnrollmentEngine --> Student
 EnrollmentEngine --> Course
-EnrollmentEngine --> EligibilityResult
+EnrollmentEngine --> ResultViewer
 ```
 
 SEQUENCE DIAGRAM (not final)
 ``` mermaid
 sequenceDiagram
 
-participant User
+participant 👤User
 participant Main
 participant JSONLoader
-participant Curriculum
+participant StudentRepository
 participant Student
+participant Curriculum
 participant Engine
-participant Result
+participant ResultViewer
 
-User ->> Main: Enter student info
+%% SEARCH STUDENT
+User ->> Main: Enter student name
 
-Main ->> JSONLoader: loadStudents file
-JSONLoader -->> Main: return student data
+Main ->> JSONLoader: loadStudents JSON
+JSONLoader -->> Main: student dataset
 
-Main ->> JSONLoader: loadCourses file
-JSONLoader -->> Main: return course list
+Main ->> StudentRepository: findStudentByName(name)
+StudentRepository -->> Main: student profile
 
-Main ->> Student: create student object
+alt Student found
 
-Main ->> Curriculum: filter courses
-Curriculum -->> Main: return filtered courses
+    Main ->> Student: create student object
 
-Main ->> Engine: evaluate eligibility
+    %% SHOW INFO
+    Main ->> ResultViewer: display student info
 
-Engine ->> Student: get completed courses
-Engine ->> Curriculum: check prerequisites
-Engine ->> Curriculum: check corequisites
+    %% LOAD CURRICULUM
+    Main ->> Curriculum: getCourses(program, year, semester)
+    Curriculum -->> Main: course list
 
-Engine ->> Result: store eligible and blocked
-Result -->> Main: return results
+    %% SHOW COURSES + GRADES
+    Main ->> ResultViewer: display completed courses (PASSED/FAILED)
 
-Main ->> User: display eligible courses
-Main ->> User: display blocked courses
+    %% EVALUATION PROCESS
+    Main ->> Engine: evaluateEligibility(student, courses)
+
+    loop for each course
+        Engine ->> Student: check grade
+        Engine ->> Curriculum: check prerequisites
+        Engine ->> Curriculum: check co-requisites
+
+        alt prerequisites met
+            Engine ->> ResultViewer: mark eligible course
+        else not met
+            Engine ->> ResultViewer: mark blocked course
+        end
+    end
+
+    %% DETERMINE STATUS
+    Engine ->> Student: determine REGULAR or IRREGULAR
+
+    %% FINAL OUTPUT
+    ResultViewer -->> Main: compiled results
+    Main ->> User: display eligibility + status
+
+else Student not found
+    Main ->> User: display "Student not found"
+end
 ```
