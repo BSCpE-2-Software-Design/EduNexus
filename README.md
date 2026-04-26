@@ -1,3 +1,5 @@
+EduNexus (Academic Progress and Enrollment Planner)
+
 CLASS DIAGRAM (not final)
 ``` mermaid
 classDiagram
@@ -52,16 +54,16 @@ class ResultViewer {
   +displayEligibility()
 }
 
-StudentRepository --> Student
-JSONLoader --> StudentRepository
-JSONLoader --> Curriculum
+StudentRepository --> Student : retrieves student data
+JSONLoader --> StudentRepository : loads student JSON
+JSONLoader --> Curriculum : loads course JSON
 
-Curriculum --> Course
-Student --> Course
+Curriculum --> Course : contains courses
+Student --> Course : completes
 
-EnrollmentEngine --> Student
-EnrollmentEngine --> Course
-EnrollmentEngine --> ResultViewer
+EnrollmentEngine --> Student : evaluates student
+EnrollmentEngine --> Course : checks rules
+EnrollmentEngine --> ResultViewer : sends results
 ```
 
 SEQUENCE DIAGRAM (not final)
