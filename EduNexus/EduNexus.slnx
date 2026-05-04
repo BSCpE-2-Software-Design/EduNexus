@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="EduNexus/EduNexus.vcxproj" Id="5d3014bb-2b05-471e-beb3-275464cc8f71" />
+</Solution>

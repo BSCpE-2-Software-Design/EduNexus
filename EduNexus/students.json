@@ -1,0 +1,273 @@
+{
+  "students": [
+    {
+      "name": "Zane Talbott",
+      "program": "BSCpE",
+      "enrolling_year": 1,
+      "enrolling_semester": 2,
+      "completed_courses": [
+        { "code": "AL0437A", "grade": 1.50 },
+        { "code": "CE2313A", "grade": 1.20 },
+		    { "code": "AL0617D", "grade": 2.20 },
+		    { "code": "AL0609D", "grade": 1.00 },
+		    { "code": "AL0137X", "grade": 1.25 }
+      ]
+    },
+    {
+      "name": "Anika Brooks",
+      "program": "BSCpE",
+      "enrolling_year": 1,
+      "enrolling_semester": 2,
+      "completed_courses": [
+        { "code": "AL0437A", "grade": 5.00 },
+        { "code": "CE2313A", "grade": 5.00 },
+		    { "code": "AL0617D", "grade": 2.20 },
+		    { "code": "AL0609D", "grade": 3.00 },
+		    { "code": "AL0137X", "grade": 1.25 }
+      ]
+    },
+	  {
+      "name": "Cade Pearson",
+      "program": "BSCpE",
+      "enrolling_year": 2,
+      "enrolling_semester": 1,
+      "completed_courses": [
+        { "code": "AL0437A", "grade": 2.30 },
+        { "code": "CE2313A", "grade": 1.00 },
+		    { "code": "AL0617D", "grade": 2.70 },
+		    { "code": "AL0609D", "grade": 1.80 }
+      ]
+    },
+	  {
+      "name": "Tessa Monroe",
+      "program": "BSCpE",
+      "enrolling_year": 2,
+      "enrolling_semester": 2,
+      "completed_courses": [
+        { "code": "AL0408D", "grade": 5.00 },
+        { "code": "CE2314A", "grade": 5.00 },
+		    { "code": "EC1229A", "grade": 5.00 },
+		    { "code": "AL0618N", "grade": 5.00 }
+      ]
+    },
+	  {
+      "name": "Kael Santos",
+      "program": "BSCpE",
+      "enrolling_year": 3,
+      "enrolling_semester": 1,
+      "completed_courses": [
+        { "code": "AL0441A", "grade": 3.00 },
+        { "code": "CE2316A", "grade": 2.90 },
+		    { "code": "CE2313A", "grade": 1.20 },
+		    { "code": "CE2314A", "grade": 1.10 }
+      ]
+    },
+	  {
+      "name": "Nadia Greer",
+      "program": "BSCpE",
+      "enrolling_year": 3,
+      "enrolling_semester": 2,
+      "completed_courses": [
+        { "code": "CE1991A", "grade": 3.00 },
+        { "code": "CE2317A", "grade": 2.40 },
+		    { "code": "EC3112A", "grade": 2.20 },
+		    { "code": "AL0137X", "grade": 5.00 },
+		    { "code": "CE2323A", "grade": 5.00 }
+      ]
+	  },
+	  {
+      "name": "Harlan Nunez",
+      "program": "BSCpE",
+      "enrolling_year": 4,
+      "enrolling_semester": 1,
+      "completed_courses": [
+        { "code": "CE1021A", "grade": 1.00 },
+        { "code": "AL3001A", "grade": 2.90 },
+		    { "code": "CE2320A", "grade": 1.70 },
+		    { "code": "CE2330A", "grade": 1.10 }
+      ]
+    },
+	  {
+      "name": "Noelle Andrade",
+      "program": "BSCpE",
+      "enrolling_year": 4,
+      "enrolling_semester": 2,
+      "completed_courses": [
+        { "code": "CE1025A", "grade": 5.00 }
+      ]
+    },
+	  {
+      "name": "Landon Finch",
+      "program": "BSECE",
+      "enrolling_year": 1,
+      "enrolling_semester": 2,
+      "completed_courses": [
+        { "code": "AL0437B", "grade": 1.00 },
+        { "code": "AL0533A", "grade": 2.90 },
+		    { "code": "AL0617E", "grade": 1.70 },
+		    { "code": "AL0609E", "grade": 1.10 }
+      ]
+    },
+    {
+      "name": "Maya Marquez",
+      "program": "BSECE",
+      "enrolling_year": 1,
+      "enrolling_semester": 2,
+      "completed_courses": [
+        { "code": "AL0437B", "grade": 5.00 },
+        { "code": "AL0533A", "grade": 5.00 },
+        { "code": "AL0617E", "grade": 5.00 },
+        { "code": "AL0609E", "grade": 5.00 }
+      ]
+    },
+	  {
+      "name": "Axel Merritt",
+      "program": "BSECE",
+      "enrolling_year": 2,
+      "enrolling_semester": 1,
+      "completed_courses": [
+        { "code": "AL0438B", "grade": 1.00 },
+        { "code": "AL0534A", "grade": 2.00 },
+		    { "code": "AL0616M", "grade": 5.00 }
+      ]
+    }, 
+    {
+      "name": "Kaia Flores",
+      "program": "BSECE",
+      "enrolling_year": 2,
+      "enrolling_semester": 2,
+      "completed_courses": [
+        { "code": "AL0408E", "grade": 5.00 },
+        { "code": "EC1230A", "grade": 5.00 },
+		    { "code": "EC3412A", "grade": 5.00 },
+        { "code": "AL0618P", "grade": 5.00 }
+      ]
+    },
+	  {
+      "name": "Gavin Huerta",
+      "program": "BSECE",
+      "enrolling_year": 3,
+      "enrolling_semester": 1,
+      "completed_courses": [
+        { "code": "EC3412A", "grade": 1.50 },
+        { "code": "EC3413A", "grade": 3.00 },
+		    { "code": "AL0443A", "grade": 2.90 },
+        { "code": "EC2909A", "grade": 2.30 }
+      ]
+    },
+    {
+      "name": "Corrine Arellano",
+      "program": "BSECE",
+      "enrolling_year": 3,
+      "enrolling_semester": 2,
+      "completed_courses": [
+        { "code": "EC1325A", "grade": 1.50 },
+        { "code": "EC1322A", "grade": 3.00 },
+		    { "code": "AL0443A", "grade": 1.60 }
+      ]
+    },
+    {
+      "name": "Daxon Calhoun",
+      "program": "BSECE",
+      "enrolling_year": 4,
+      "enrolling_semester": 1,
+      "completed_courses": [
+     
+      ]
+    },
+    {
+      "name": "Reese Hatcher",
+      "program": "BSECE",
+      "enrolling_year": 3,
+      "enrolling_semester": 2,
+      "completed_courses": [
+        { "code": "EC1327A", "grade": 1.50 }
+      ]
+    },
+    {
+      "name": "Silas Sterling",
+      "program": "BSEE",
+      "enrolling_year": 1,
+      "enrolling_semester": 2,
+      "completed_courses": [
+        { "code": "AL0437C", "grade": 1.50 },
+        { "code": "AL0617F", "grade": 3.00 },
+		    { "code": "AL0609F", "grade": 1.60 }
+      ]
+    },
+    {
+      "name": "Anya  Caldwell",
+      "program": "BSEE",
+      "enrolling_year": 2,
+      "enrolling_semester": 1,
+      "completed_courses": [
+        { "code": "AL0438C", "grade": 1.50 },
+        { "code": "AL0513B", "grade": 3.00 },
+		    { "code": "AL0437C", "grade": 2.60 },
+        { "code": "AL0616N", "grade": 1.30 }
+      ]
+    },
+    {
+      "name": "Holden Vargas",
+      "program": "BSEE",
+      "enrolling_year": 2,
+      "enrolling_semester": 2,
+      "completed_courses": [
+        { "code": "AL0408F", "grade": 1.50 },
+        { "code": "EC1316A", "grade": 3.00 },
+		    { "code": "EE1122A", "grade": 2.60 },
+        { "code": "AL0513B", "grade": 1.30 },
+        { "code": "AL0618Q", "grade": 1.30 }
+      ]
+    },
+    {
+      "name": "Saira Huang",
+      "program": "BSEE",
+      "enrolling_year": 3,
+      "enrolling_semester": 1,
+      "completed_courses": [
+        { "code": "AL0445A", "grade": 1.50 },
+        { "code": "EE1124A", "grade": 3.00 },
+		    { "code": "EC3112A", "grade": 2.60 },
+        { "code": "EC1319B", "grade": 1.30 },
+        { "code": "EE1123A", "grade": 1.30 }
+      ]
+    },
+    {
+      "name": "Kaelan Pena",
+      "program": "BSEE",
+      "enrolling_year": 3,
+      "enrolling_semester": 2,
+      "completed_courses": [
+        { "code": "", "grade": 1.50 },
+        { "code": "", "grade": 3.00 },
+		    { "code": "", "grade": 2.60 },
+        { "code": "", "grade": 1.30 }
+      ]
+    },
+    {
+      "name": "Dalia Roman",
+      "program": "BSEE",
+      "enrolling_year": 4,
+      "enrolling_semester": 1,
+      "completed_courses": [
+        { "code": "", "grade": 1.50 },
+        { "code": "", "grade": 3.00 },
+		    { "code": "", "grade": 2.60 },
+        { "code": "", "grade": 1.30 }
+      ]
+    },
+    {
+      "name": "Jude Fitzgerald",
+      "program": "BSEE",
+      "enrolling_year": 4
+      "enrolling_semester": 2,
+      "completed_courses": [
+        { "code": "", "grade": 1.50 },
+        { "code": "", "grade": 3.00 },
+		    { "code": "", "grade": 2.60 },
+        { "code": "", "grade": 1.30 }
+      ]
+    }
+  ]
+}

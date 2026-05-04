@@ -1,0 +1,308 @@
+{
+  "program": "BSECE",
+  "courses": [
+    {
+      "code": "AL0437B",
+      "name": "Calculus 1",
+      "units": 3,
+      "year_level": 1,
+      "semester": 1,
+      "prerequisites": [],
+      "corequisites": []
+    },
+	{
+      "code": "AL0533A",
+      "name": "Chemistry for Engineers",
+      "units": 4,
+      "year_level": 1,
+      "semester": 1,
+      "prerequisites": [],
+      "corequisites": []
+    },
+	{
+      "code": "AL0617E",
+      "name": "PATHFIT 1- Movement Competency Training",
+      "units": 2,
+      "year_level": 1,
+      "semester": 1,
+      "prerequisites": [],
+      "corequisites": []
+    },
+	{
+      "code": "AL0609E",
+      "name": "NSTP 1- LTS/CWTS/ROTC",
+      "units": 3,
+      "year_level": 1,
+      "semester": 1,
+      "prerequisites": [],
+      "corequisites": []
+    },
+	{
+      "code": "AL0438B",
+      "name": "Calculus 2",
+      "units": 3,
+      "year_level": 1,
+      "semester": 2,
+      "prerequisites": ["AL0437B"],
+      "corequisites": []
+    },
+	{
+      "code": "AL0513A",
+      "name": "Physics for Engineers",
+      "units": 4,
+      "year_level": 1,
+      "semester": 2,
+      "prerequisites": ["AL0437B"],
+      "corequisites": []
+    },
+	{
+      "code": "EC1452A",
+      "name": "Materials Science and Engineering",
+      "units": 3,
+      "year_level": 1,
+      "semester": 2,
+      "prerequisites": ["AL0533A"],
+      "corequisites": []
+    },
+	{
+      "code": "AL0534A",
+      "name": "Physics 2",
+      "units": 3,
+      "year_level": 1,
+      "semester": 2,
+      "prerequisites": [],
+      "corequisites": ["AL0513A"]
+    },
+	{
+      "code": "AL0616M",
+      "name": "PATHFIT 2- Exercise Based Fitness Activity",
+      "units": 2,
+      "year_level": 1,
+      "semester": 2,
+      "prerequisites": ["AL0617E"],
+      "corequisites": []
+    },
+	{
+      "code": "AL0610M",
+      "name": "NSTP 2- LTS/CWTS/ROTC",
+      "units": 3,
+      "year_level": 1,
+      "semester": 2,
+      "prerequisites": ["AL0609E"],
+      "corequisites": []
+    },
+	
+	
+	{
+      "code": "AL0408E",
+      "name": "Differential Equations",
+      "units": 3,
+      "year_level": 2,
+      "semester": 1,
+      "prerequisites": ["AL0438B"],
+      "corequisites": []
+    },
+	{
+      "code": "EC1230A",
+      "name": "Circuits 1",
+      "units": 4,
+      "year_level": 2,
+      "semester": 1,
+      "prerequisites": ["AL0534A"],
+      "corequisites": []
+    },
+	{
+      "code": "EC3412A",
+      "name": "Electronics 1: Electronic Devices and Circuits",
+      "units": 4,
+      "year_level": 2,
+      "semester": 1,
+      "prerequisites": [],
+      "corequisites": ["EC1230A"]
+    },
+	{
+      "code": "AL0618P",
+      "name": "PATHFIT 3- Dance",
+      "units": 2,
+      "year_level": 2,
+      "semester": 1,
+      "prerequisites": ["AL0616M"],
+      "corequisites": []
+    },
+	{
+      "code": "AL0443A",
+      "name": "Advanced Engineering Mathematics for ECE",
+      "units": 4,
+      "year_level": 2,
+      "semester": 2,
+      "prerequisites": ["AL0408E"],
+      "corequisites": []
+    },
+	{
+      "code": "EC1231A",
+      "name": "Circuits 2",
+      "units": 4,
+      "year_level": 2,
+      "semester": 2,
+      "prerequisites": ["EC1230A"],
+      "corequisites": []
+    },
+	{
+      "code": "EC3413A",
+      "name": "Electronics 2: Electronic Circuit Analysis and Design",
+      "units": 4,
+      "year_level": 2,
+      "semester": 2,
+      "prerequisites": ["EC3412A"],
+      "corequisites": []
+    },
+	{
+      "code": "EC2909A",
+      "name": "Communications 1: Principles of Communication Systems",
+      "units": 4,
+      "year_level": 2,
+      "semester": 2,
+      "prerequisites": [],
+      "corequisites": ["EC3413A"]
+    },
+	{
+      "code": "EC1319A",
+      "name": "Electromagnetics",
+      "units": 4,
+      "year_level": 2,
+      "semester": 2,
+      "prerequisites": ["AL0438B"],
+      "corequisites": []
+    },
+	{
+      "code": "AL0619N",
+      "name": "PATHFIT 4- Sports",
+      "units": 2,
+      "year_level": 2,
+      "semester": 2,
+      "prerequisites": ["AL0618P"],
+      "corequisites": []
+    },
+	
+	
+	{
+      "code": "EC1322A",
+      "name": "Digital Electronics 1: Logic Circuits and Switching Theory",
+      "units": 4,
+      "year_level": 3,
+      "semester": 1,
+      "prerequisites": ["EC3412A"],
+      "corequisites": []
+    },
+	{
+      "code": "EC1323A",
+      "name": "Electronics 3: Electronic Systems and Design",
+      "units": 4,
+      "year_level": 3,
+      "semester": 1,
+      "prerequisites": ["EC3413A"],
+      "corequisites": []
+    },
+	{
+      "code": "EC1324A",
+      "name": "Signals, Spectra, Signal Processing",
+      "units": 4,
+      "year_level": 3,
+      "semester": 1,
+      "prerequisites": ["AL0443A"],
+      "corequisites": []
+    },
+	{
+      "code": "EC1325A",
+      "name": "Communications 2: Modulation and Coding Techniques",
+      "units": 4,
+      "year_level": 3,
+      "semester": 1,
+      "prerequisites": ["EC2909A"],
+      "corequisites": []
+    },
+	{
+      "code": "EC1371A",
+      "name": "Communications 3: Transmission Media and Antenna System and Design",
+      "units": 4,
+      "year_level": 3,
+      "semester": 2,
+      "prerequisites": ["EC1324A"],
+      "corequisites": []
+    },
+	{
+      "code": "EC1238A",
+      "name": "Communications 4: Data Communications",
+      "units": 4,
+      "year_level": 3,
+      "semester": 2,
+      "prerequisites": ["EC1325A"],
+      "corequisites": []
+    },
+	{
+      "code": "EC1322B",
+      "name": "Digital Electronics 2: Microprocessor, Microcontroller Systems and Design",
+      "units": 4,
+      "year_level": 3,
+      "semester": 2,
+      "prerequisites": ["EC1322A"],
+      "corequisites": []
+    },
+	{
+      "code": "CE2320B",
+      "name": "Feedback and Control Systems",
+      "units": 4,
+      "year_level": 3,
+      "semester": 2,
+      "prerequisites": ["AL0443A"],
+      "corequisites": []
+    },
+	
+	
+	{
+      "code": "AL3001B",
+      "name": "Methods of Research",
+      "units": 3,
+      "year_level": 4,
+      "semester": 1,
+      "prerequisites": [],
+      "corequisites": []
+    },
+	{
+      "code": "EC1327A",
+      "name": "Design 1/Capstone Project 1",
+      "units": 1,
+      "year_level": 4,
+      "semester": 1,
+      "prerequisites": [],
+      "corequisites": []
+    },
+	{
+      "code": "EC1330A",
+      "name": "Design 2/Capstone Project 2",
+      "units": 2,
+      "year_level": 4,
+      "semester": 2,
+      "prerequisites": ["EC1327A"],
+      "corequisites": []
+    },
+	{
+      "code": "EC1331A",
+      "name": "Seminars/Colloquium",
+      "units": 1,
+      "year_level": 4,
+      "semester": 2,
+      "prerequisites": [],
+      "corequisites": []
+    },
+	{
+      "code": "CE2328B",
+      "name": "On the Job Training (OJT)",
+      "units": 2,
+      "year_level": 4,
+      "semester": 2,
+      "prerequisites": [],
+      "corequisites": []
+    }
+  ]
+}

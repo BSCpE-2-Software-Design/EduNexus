@@ -1,0 +1,427 @@
+{
+  "program": "BSCpE",
+  "courses": [
+    {
+      "code": "AL0437A",
+      "name": "Calculus 1",
+      "units": 3,
+      "year_level": 1,
+      "semester": 1,
+      "prerequisites": [],
+      "corequisites": []
+    },
+	{
+      "code": "CE2313A",
+      "name": "Programming Logic and Design",
+      "units": 2,
+      "year_level": 1,
+      "semester": 1,
+      "prerequisites": [],
+      "corequisites": []
+    },
+	{
+      "code": "AL0617D",
+      "name": "PATHFIT 1- Movement Competency Training",
+      "units": 2,
+      "year_level": 1,
+      "semester": 1,
+      "prerequisites": [],
+      "corequisites": []
+    },
+	{
+      "code": "AL0609D",
+      "name": "NSTP 1- LTS/CWTS/ROTC",
+      "units": 3,
+      "year_level": 1,
+      "semester": 1,
+      "prerequisites": [],
+      "corequisites": []
+    },
+	{
+      "code": "AL0137X",
+      "name": "Purposive Communication",
+      "units": 3,
+      "year_level": 1,
+      "semester": 1,
+      "prerequisites": [],
+      "corequisites": []
+    },
+	{
+      "code": "AL0438A",
+      "name": "Calculus 2",
+      "units": 3,
+      "year_level": 1,
+      "semester": 2,
+      "prerequisites": ["AL0437A"],
+      "corequisites": []
+    },
+	{
+      "code": "AL0513A",
+      "name": "Physics for Engineers",
+      "units": 4,
+      "year_level": 1,
+      "semester": 2,
+      "prerequisites": ["AL0437A"],
+      "corequisites": []
+    },
+	{
+      "code": "EC3112A",
+      "name": "Engineering Data Analysis",
+      "units": 3,
+      "year_level": 1,
+      "semester": 2,
+      "prerequisites": ["AL0437A"],
+      "corequisites": []
+    },
+	{
+      "code": "AL0411E",
+      "name": "Discrete Mathematics",
+      "units": 3,
+      "year_level": 1,
+      "semester": 2,
+      "prerequisites": ["AL0437A"],
+      "corequisites": []
+    },
+	{
+      "code": "CS0819B",
+      "name": "Object Oriented Programming",
+      "units": 3,
+      "year_level": 1,
+      "semester": 2,
+      "prerequisites": ["CE2313A"],
+      "corequisites": []
+    },
+	{
+      "code": "AL0616L",
+      "name": "PATHFIT 2- Exercise Based Fitness Activity",
+      "units": 2,
+      "year_level": 1,
+      "semester": 2,
+      "prerequisites": ["AL0617D"],
+      "corequisites": []
+    },
+	{
+      "code": "AL0610L",
+      "name": "NSTP 2- LTS/CWTS/ROTC",
+      "units": 3,
+      "year_level": 1,
+      "semester": 2,
+      "prerequisites": ["AL0609D"],
+      "corequisites": []
+    },
+	
+	
+	{
+      "code": "AL0408D",
+      "name": "Differential Equations",
+      "units": 3,
+      "year_level": 2,
+      "semester": 1,
+      "prerequisites": ["AL0438A"],
+      "corequisites": []
+    },
+	{
+      "code": "EC1229A",
+      "name": "Fundamentals of Electrical Circuits",
+      "units": 4,
+      "year_level": 2,
+      "semester": 1,
+      "prerequisites": ["AL0513A"],
+      "corequisites": []
+    },
+	{
+      "code": "CE2314A",
+      "name": "Data Structures and Algorithms",
+      "units": 3,
+      "year_level": 2,
+      "semester": 1,
+      "prerequisites": ["CS0819B"],
+      "corequisites": []
+    },
+	{
+      "code": "AL0618N",
+      "name": "PATHFIT 3- Dance",
+      "units": 2,
+      "year_level": 2,
+      "semester": 1,
+      "prerequisites": ["AL0616L"],
+      "corequisites": []
+    },
+    {
+      "code": "EC1314A",
+      "name": "Engineering Economics",
+      "units": 3,
+      "year_level": 2,
+      "semester": 1,
+      "prerequisites": [],
+      "corequisites": []
+    },
+	{
+      "code": "EC2907A",
+      "name": "Computer Aided Drafting",
+      "units": 1,
+      "year_level": 2,
+      "semester": 1,
+      "prerequisites": [],
+      "corequisites": []
+    },
+	
+	
+	{
+      "code": "AL0441A",
+      "name": "Numerical Methods",
+      "units": 3,
+      "year_level": 2,
+      "semester": 2,
+      "prerequisites": ["AL0408D"],
+      "corequisites": []
+    },
+    {
+      "code": "CE2315A",
+      "name": "Software Design",
+      "units": 4,
+      "year_level": 2,
+      "semester": 2,
+      "prerequisites": ["CE2314A"],
+      "corequisites": []
+    },
+	{
+      "code": "CE2316A",
+      "name": "Fundamentals of Electronics Circuits",
+      "units": 4,
+      "year_level": 2,
+      "semester": 2,
+      "prerequisites": ["EC1229A"],
+      "corequisites": []
+    },
+	{
+      "code": "AL0619M",
+      "name": "PATHFIT 4- Sports",
+      "units": 2,
+      "year_level": 2,
+      "semester": 2,
+      "prerequisites": [],
+      "corequisites": []
+    },
+	
+	
+	{
+      "code": "CE2320A",
+      "name": "Feedback and Control Systems",
+      "units": 3,
+      "year_level": 3,
+      "semester": 1,
+      "prerequisites": ["AL0441A" , "CE2316A"],
+      "corequisites": []
+    },
+	{
+      "code": "CE2317A",
+      "name": "Logic Circuits and Design",
+      "units": 4,
+      "year_level": 3,
+      "semester": 1,
+      "prerequisites": ["CE2316A"],
+      "corequisites": []
+    },
+	{
+      "code": "CE1991A",
+      "name": "Data and Digital Communications",
+      "units": 3,
+      "year_level": 3,
+      "semester": 1,
+      "prerequisites": ["CE2316A"],
+      "corequisites": []
+    },
+	{
+      "code": "CE2319A",
+      "name": "Introduction to HDL",
+      "units": 1,
+      "year_level": 3,
+      "semester": 1,
+      "prerequisites": ["CE2313A" , "CE2316A"],
+      "corequisites": []
+    },
+	{
+      "code": "CE2321A",
+      "name": "Fundamentals of Mixed Signals and Sensors",
+      "units": 3,
+      "year_level": 3,
+      "semester": 1,
+      "prerequisites": ["CE2316A"],
+      "corequisites": []
+    },
+	{
+      "code": "CE2322A",
+      "name": "Computer Engineering Drafting and Design",
+      "units": 1,
+      "year_level": 3,
+      "semester": 1,
+      "prerequisites": ["CE2316A"],
+      "corequisites": []
+    },
+	{
+      "code": "CE2313A",
+      "name": "Operating Systems",
+      "units": 3,
+      "year_level": 3,
+      "semester": 1,
+      "prerequisites": ["CE2316A"],
+      "corequisites": []
+    },
+	{
+      "code": "CE2323A",
+      "name": "Software Development 1 (Elective 1)",
+      "units": 3,
+      "year_level": 3,
+      "semester": 1,
+      "prerequisites": [],
+      "corequisites": []
+    },
+	{
+      "code": "CE1020A",
+      "name": "Computer Networks and Security",
+      "units": 4,
+      "year_level": 3,
+      "semester": 2,
+      "prerequisites": ["CE1991A"],
+      "corequisites": []
+    },
+	{
+      "code": "CE1021A",
+      "name": "Microprocessors",
+      "units": 4,
+      "year_level": 3,
+      "semester": 2,
+      "prerequisites": ["CE2317A"],
+      "corequisites": []
+    },
+	{
+      "code": "AL3001A",
+      "name": "Methods of Research",
+      "units": 2,
+      "year_level": 3,
+      "semester": 2,
+      "prerequisites": ["EC3112A" , "AL0137X" , "CE2317A"],
+      "corequisites": []
+    },
+	{
+      "code": "CE2330A",
+      "name": "Software Development 2 (Elective 2)",
+      "units": 4,
+      "year_level": 3,
+      "semester": 2,
+      "prerequisites": ["CE2323A"],
+      "corequisites": []
+    },
+	{
+      "code": "AL1823A",
+      "name": "Basic Occupational Health and Safety",
+      "units": 3,
+      "year_level": 3,
+      "semester": 2,
+      "prerequisites": [],
+      "corequisites": []
+    },
+	{
+      "code": "EC1326A",
+      "name": "Technopreneurship",
+      "units": 3,
+      "year_level": 3,
+      "semester": 2,
+      "prerequisites": [],
+      "corequisites": []
+    },
+	{
+      "code": "CE2325A",
+      "name": "CpE Laws and Professional Practice",
+      "units": 2,
+      "year_level": 3,
+      "semester": 2,
+      "prerequisites": [],
+      "corequisites": []
+    },
+	
+	
+	{
+      "code": "CE1022A",
+      "name": "Embedded Systems",
+      "units": 4,
+      "year_level": 4,
+      "semester": 1,
+      "prerequisites": ["CE1021A"],
+      "corequisites": []
+    },
+	{
+      "code": "CE1023A",
+      "name": "Computer Architecture and Organization",
+      "units": 4,
+      "year_level": 4,
+      "semester": 1,
+      "prerequisites": ["CE1021A"],
+      "corequisites": []
+    },
+	{
+      "code": "CE1025A",
+      "name": "CpE Practice and Design 1",
+      "units": 1,
+      "year_level": 4,
+      "semester": 1,
+      "prerequisites": ["CE1021A" , "AL3001A"],
+      "corequisites": []
+    },
+	{
+      "code": "CE1026A",
+      "name": "Digital Signal Processing",
+      "units": 4,
+      "year_level": 4,
+      "semester": 1,
+      "prerequisites": ["CE2320A"],
+      "corequisites": []
+    },
+	{
+      "code": "CE1027A",
+      "name": "Software Development 3 (Elective 3)",
+      "units": 4,
+      "year_level": 4,
+      "semester": 1,
+      "prerequisites": ["CE2330A"],
+      "corequisites": []
+    },
+	{
+      "code": "CE1024A",
+      "name": "Emerging Technologies in CpE",
+      "units": 3,
+      "year_level": 4,
+      "semester": 1,
+      "prerequisites": [],
+      "corequisites": []
+    },
+	{
+      "code": "CE2326A",
+      "name": "Cpe Practice and Design 2",
+      "units": 2,
+      "year_level": 4,
+      "semester": 2,
+      "prerequisites": ["CE1025A"],
+      "corequisites": []
+    },
+	{
+      "code": "CE2327A",
+      "name": "Seminars and Fieldtrips",
+      "units": 1,
+      "year_level": 4,
+      "semester": 2,
+      "prerequisites": [],
+      "corequisites": []
+    },
+	{
+      "code": "CE2328A",
+      "name": "On the Job Training (OJT)",
+      "units": 3,
+      "year_level": 4,
+      "semester": 2,
+      "prerequisites": [],
+      "corequisites": []
+    }
+  ]
+}
