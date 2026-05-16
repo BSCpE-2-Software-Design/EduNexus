@@ -1,0 +1,435 @@
+{
+  "program": "BSEE",
+  "courses": [
+    {
+      "code": "AL0437C",
+      "name": "Calculus 1",
+      "units": 3,
+      "year_level": 1,
+      "semester": 1,
+      "prerequisites": [],
+      "corequisites": []
+    },
+    {
+      "code": "AL0617F",
+      "name": "PATHFIT 1- Movement Competency Training",
+      "units": 2,
+      "year_level": 1,
+      "semester": 1,
+      "prerequisites": [],
+      "corequisites": []
+    },
+    {
+      "code": "AL0609F",
+      "name": "NSTP 1- LTS/CWTS/ROTC",
+      "units": 3,
+      "year_level": 1,
+      "semester": 1,
+      "prerequisites": [],
+      "corequisites": []
+    },
+    {
+      "code": "AL0438C",
+      "name": "Calculus 2",
+      "units": 3,
+      "year_level": 1,
+      "semester": 2,
+      "prerequisites": [ "AL0437C" ],
+      "corequisites": []
+    },
+    {
+      "code": "AL0513B",
+      "name": "Physics for Engineers",
+      "units": 4,
+      "year_level": 1,
+      "semester": 2,
+      "prerequisites": [ "AL0437C" ],
+      "corequisites": []
+    },
+    {
+      "code": "AL0616N",
+      "name": "PATHFIT 2- Exercise Based Fitness Activity",
+      "units": 2,
+      "year_level": 1,
+      "semester": 2,
+      "prerequisites": [ "AL0617F" ],
+      "corequisites": []
+    },
+    {
+      "code": "AL0610N",
+      "name": "NSTP 2- LTS/CWTS/ROTC",
+      "units": 3,
+      "year_level": 1,
+      "semester": 2,
+      "prerequisites": [ "AL0609F" ],
+      "corequisites": []
+    },
+
+
+    {
+      "code": "AL0408F",
+      "name": "Differential Equations",
+      "units": 3,
+      "year_level": 2,
+      "semester": 1,
+      "prerequisites": [ "AL0438C" ],
+      "corequisites": []
+    },
+    {
+      "code": "EE1122A",
+      "name": "Electrical Circuits 1",
+      "units": 3,
+      "year_level": 2,
+      "semester": 1,
+      "prerequisites": [ "AL0513B", "AL0408F" ],
+      "corequisites": []
+    },
+    {
+      "code": "EC1316A",
+      "name": "Engineering Mechanics",
+      "units": 3,
+      "year_level": 2,
+      "semester": 1,
+      "prerequisites": [ "AL0513B" ],
+      "corequisites": []
+    },
+    {
+      "code": "EC3112A",
+      "name": "Engineering Data Analysis",
+      "units": 3,
+      "year_level": 2,
+      "semester": 1,
+      "prerequisites": [ "AL0437C" ],
+      "corequisites": []
+    },
+    {
+      "code": "AL0618Q",
+      "name": "PATHFIT 3- Dance",
+      "units": 2,
+      "year_level": 2,
+      "semester": 1,
+      "prerequisites": [ "AL0616N" ],
+      "corequisites": []
+    },
+    {
+      "code": "AL0445A",
+      "name": "Engineering Mathematics for EE",
+      "units": 3,
+      "year_level": 2,
+      "semester": 2,
+      "prerequisites": [ "AL0408F" ],
+      "corequisites": []
+    },
+    {
+      "code": "EE2313A",
+      "name": "Fundamentals of Deformable Bodies",
+      "units": 2,
+      "year_level": 2,
+      "semester": 2,
+      "prerequisites": [ "EC1316A" ],
+      "corequisites": []
+    },
+    {
+      "code": "EE1123A",
+      "name": "Electrical Circuits 2",
+      "units": 4,
+      "year_level": 2,
+      "semester": 2,
+      "prerequisites": [ "EE1122A" ],
+      "corequisites": []
+    },
+    {
+      "code": "EE1124A",
+      "name": "Electronic Circuits: Devices and Analysis",
+      "units": 4,
+      "year_level": 2,
+      "semester": 2,
+      "prerequisites": [ "EE1122A" ],
+      "corequisites": []
+    },
+    {
+      "code": "EC1317",
+      "name": "Basic Thermodynamics",
+      "units": 2,
+      "year_level": 2,
+      "semester": 2,
+      "prerequisites": [ "AL0513B" ],
+      "corequisites": []
+    },
+    {
+      "code": "EC1319B",
+      "name": "Electromagnetics",
+      "units": 2,
+      "year_level": 2,
+      "semester": 2,
+      "prerequisites": [ "AL0513B", "AL0408F" ],
+      "corequisites": []
+    },
+    {
+      "code": "AL0619P",
+      "name": "PATHFIT 4- Sports",
+      "units": 2,
+      "year_level": 2,
+      "semester": 2,
+      "prerequisites": [ "AL0618Q" ],
+      "corequisites": []
+    },
+
+
+    {
+      "code": "AL0442B",
+      "name": "Numerical Methods and Analysis",
+      "units": 3,
+      "year_level": 3,
+      "semester": 1,
+      "prerequisites": [ "AL0445A" ],
+      "corequisites": []
+    },
+    {
+      "code": "EE1127A",
+      "name": "Logic Circuits and Switching Theory",
+      "units": 2,
+      "year_level": 3,
+      "semester": 1,
+      "prerequisites": [ "EE1124A" ],
+      "corequisites": []
+    },
+    {
+      "code": "EC1315B",
+      "name": "Engineering Economics",
+      "units": 3,
+      "year_level": 3,
+      "semester": 1,
+      "prerequisites": [ "EC3112A" ],
+      "corequisites": []
+    },
+    {
+      "code": "EC1314T",
+      "name": "Industrial Economics",
+      "units": 4,
+      "year_level": 3,
+      "semester": 1,
+      "prerequisites": [ "EE1124A" ],
+      "corequisites": []
+    },
+    {
+      "code": "EE1132A",
+      "name": "Fundamentals of Electronic Communications",
+      "units": 3,
+      "year_level": 3,
+      "semester": 1,
+      "prerequisites": [ "EE1124A" ],
+      "corequisites": []
+    },
+    {
+      "code": "EE1126A",
+      "name": "Electrical Machines 1",
+      "units": 2,
+      "year_level": 3,
+      "semester": 1,
+      "prerequisites": [ "EC1319B" ],
+      "corequisites": []
+    },
+    {
+      "code": "EE1131B",
+      "name": "Microprocessor Systems",
+      "units": 2,
+      "year_level": 3,
+      "semester": 2,
+      "prerequisites": [ "EE1127A" ],
+      "corequisites": []
+    },
+    {
+      "code": "EE1129A",
+      "name": "Electrical Apparatus and Devices",
+      "units": 3,
+      "year_level": 3,
+      "semester": 2,
+      "prerequisites": [ "EE1123A" ],
+      "corequisites": []
+    },
+    {
+      "code": "EE1133A",
+      "name": "Electrical Machines 2",
+      "units": 4,
+      "year_level": 3,
+      "semester": 2,
+      "prerequisites": [ "EE1126A" ],
+      "corequisites": []
+    },
+    {
+      "code": "EE1145A",
+      "name": "Fluid Mechanics",
+      "units": 2,
+      "year_level": 3,
+      "semester": 2,
+      "prerequisites": [ "AL0513B" ],
+      "corequisites": []
+    },
+    {
+      "code": "EE2314A",
+      "name": "EE Law, Codes, and Professional Ethics",
+      "units": 2,
+      "year_level": 3,
+      "semester": 2,
+      "prerequisites": [ "AL0349F" ],
+      "corequisites": []
+    },
+    {
+      "code": "CE2320C",
+      "name": "Feedback and Control Systems",
+      "units": 2,
+      "year_level": 3,
+      "semester": 2,
+      "prerequisites": [ "AL0445A", "EE1124A" ],
+      "corequisites": []
+    },
+
+
+    {
+      "code": "EE1313A",
+      "name": "Materials Sciences and Engineering",
+      "units": 2,
+      "year_level": 4,
+      "semester": 1,
+      "prerequisites": [ "AL0533B", "EE2313A" ],
+      "corequisites": []
+    },
+    {
+      "code": "EE2315A",
+      "name": "Electrical Standards and Practices",
+      "units": 1,
+      "year_level": 4,
+      "semester": 1,
+      "prerequisites": [ "EE2314A" ],
+      "corequisites": []
+    },
+    {
+      "code": "EE2316A",
+      "name": "Electrical Systems and Illumination Engineering Design",
+      "units": 5,
+      "year_level": 4,
+      "semester": 1,
+      "prerequisites": [ "EE1133A" ],
+      "corequisites": []
+    },
+    {
+      "code": "EE4215A",
+      "name": "Management of Engineering Projects",
+      "units": 2,
+      "year_level": 4,
+      "semester": 1,
+      "prerequisites": [ "EC1315B" ],
+      "corequisites": []
+    },
+    {
+      "code": "AL3001C",
+      "name": "Research Methods",
+      "units": 1,
+      "year_level": 4,
+      "semester": 1,
+      "prerequisites": [ "EC3112A" ],
+      "corequisites": []
+    },
+    {
+      "code": "CE1018A",
+      "name": "Instrumentation and Control",
+      "units": 3,
+      "year_level": 4,
+      "semester": 1,
+      "prerequisites": [ "CE2320C" ],
+      "corequisites": []
+    },
+    {
+      "code": "EC1328A",
+      "name": "EE Elective 1",
+      "units": 3,
+      "year_level": 4,
+      "semester": 1,
+      "prerequisites": [],
+      "corequisites": []
+    },
+    {
+      "code": "EC1326B",
+      "name": "Technopreneurship",
+      "units": 3,
+      "year_level": 4,
+      "semester": 1,
+      "prerequisites": [],
+      "corequisites": []
+    },
+    {
+      "code": "EE1134A",
+      "name": "Power Systems Analysis",
+      "units": 4,
+      "year_level": 4,
+      "semester": 2,
+      "prerequisites": [ "EE2315A" ],
+      "corequisites": []
+    },
+    {
+      "code": "EE2324A",
+      "name": "Fundamentals of Power Plant Engineering Design",
+      "units": 1,
+      "year_level": 4,
+      "semester": 2,
+      "prerequisites": [],
+      "corequisites": [ "EE1134A" ]
+    },
+    {
+      "code": "EE1136A",
+      "name": "Distribution Systems and Substation Design",
+      "units": 3,
+      "year_level": 4,
+      "semester": 2,
+      "prerequisites": [],
+      "corequisites": [ "EE1134A" ]
+    },
+    {
+      "code": "EE2321A",
+      "name": "Research Project/Capstone Design Project",
+      "units": 1,
+      "year_level": 4,
+      "semester": 2,
+      "prerequisites": [ "AL3001C" ],
+      "corequisites": []
+    },
+    {
+      "code": "EC1329B",
+      "name": "EE Elective 2",
+      "units": 3,
+      "year_level": 4,
+      "semester": 2,
+      "prerequisites": [ "EC1328A" ],
+      "corequisites": []
+    },
+    {
+      "code": "EC2322A",
+      "name": "Seminars/Colloquia",
+      "units": 1,
+      "year_level": 4,
+      "semester": 2,
+      "prerequisites": [],
+      "corequisites": []
+    },
+    {
+      "code": "CE2328C",
+      "name": "On the Job Training (OJT)",
+      "units": 3,
+      "year_level": 4,
+      "semester": 2,
+      "prerequisites": [],
+      "corequisites": []
+    },
+    {
+      "code": "AL0533B",
+      "name": "Chemistry for Engineers",
+      "units": 3,
+      "year_level": 1,
+      "semester": 1,
+      "prerequisites": [],
+      "corequisites": []
+    }
+  ]
+}
+
